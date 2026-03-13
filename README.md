@@ -2,6 +2,8 @@
 
 PrettyLogs is a terminal-first wrapper for noisy dev commands. It runs an existing command after `--`, captures `stdout` and `stderr`, classifies output into structured log events, and renders a cleaner interactive terminal UI with Ink.
 
+![PrettyLogs hero](/prettylogs.webp)
+
 ## Install
 
 For a one-off local run inside the repo:
@@ -15,7 +17,7 @@ node dist/cli.js -- npm run dev
 To install the `prettylogs` command globally from this repo and use it from anywhere:
 
 ```bash
-cd /Users/samarthgoudar/Documents/Development/Projects/Codex/prettylogs
+cd /prettylogs
 npm install
 npm install -g .
 prettylogs -- npm run dev
@@ -24,7 +26,7 @@ prettylogs -- npm run dev
 For active development, link the local repo instead of reinstalling after every change:
 
 ```bash
-cd /Users/samarthgoudar/Documents/Development/Projects/Codex/prettylogs
+cd /prettylogs
 npm install
 npm link
 prettylogs -- npm run dev
